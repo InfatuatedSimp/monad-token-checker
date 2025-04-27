@@ -6,7 +6,7 @@
   "description_for_model": "Returns latest tokens launched on Monad testnet with market cap, holders, and supply.",
   "api": {
     "type": "openapi",
-    "url": "https://your-server.com/openapi.json"
+    "url": "https://monad-token-checker-production.up.railway.app"
   },
   "auth": {
     "type": "none"

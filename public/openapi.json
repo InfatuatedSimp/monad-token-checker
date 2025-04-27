@@ -1,0 +1,50 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Monad Token Checker API",
+    "version": "1.0.0",
+    "description": "API to fetch recently launched tokens on Monad testnet sorted by market cap."
+  },
+  "paths": {
+    "/api/recent-tokens": {
+      "get": {
+        "summary": "Fetch recently launched tokens",
+        "description": "Returns a list of tokens deployed in the past 24 hours on Monad testnet, sorted by market cap.",
+        "responses": {
+          "200": {
+            "description": "A list of tokens",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "pairAddress": { "type": "string" },
+                      "baseToken": {
+                        "type": "object",
+                        "properties": {
+                          "name": { "type": "string" },
+                          "symbol": { "type": "string" },
+                          "address": { "type": "string" }
+                        }
+                      },
+                      "priceUsd": { "type": "string" },
+                      "liquidity": {
+                        "type": "object",
+                        "properties": {
+                          "usd": { "type": "number" }
+                        }
+                      },
+                      "fdvUsd": { "type": "number" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

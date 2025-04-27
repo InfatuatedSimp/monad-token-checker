@@ -1,5 +1,5 @@
 {
-  "name": "monad-nft-token-checker",
+  "name": "monad-token-checker",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
