@@ -1,0 +1,14 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Monad Token Checker",
+  "name_for_model": "monad_token_checker",
+  "description_for_human": "Fetch recent Monad tokens and their stats.",
+  "description_for_model": "Returns latest tokens launched on Monad testnet with market cap, holders, and supply.",
+  "api": {
+    "type": "openapi",
+    "url": "https://your-server.com/openapi.json"
+  },
+  "auth": {
+    "type": "none"
+  }
+}
